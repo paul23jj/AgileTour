@@ -1,25 +1,124 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agile Tour</title>
-    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Événement</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-left">
-            <h1>Agile Tour</h1>
-        </div>
-        <div class="nav-center">
-            <a href="/home">Home</a>
-            <a href="/events">Events</a>
-            <a href="/speakers">Speakers</a>
-            <a href="/contact">Contact</a>
-        </div>
-        <div class="nav-right">
 
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="logo">Événement</a>
+            <nav class="nav-links">
+                <a href="#about">À propos</a>
+                <a href="#programme">Programme</a>
+                <a href="#speakers">Intervenants</a>
+                <a href="#contact" class="cta">S'inscrire</a>
+            </nav>
         </div>
-    </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-left">
+                <div class="hero-year">2024</div>
+                <h1 class="hero-title">Agile Tour Sophia</h1>
+                <p class="lead">Où l'agilité rencontre l'innovation. Une journée pour redéfinir la façon dont nous construisons le futur.</p>
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn btn-primary">Réserver ma place</a>
+                    <a href="#programme" class="btn btn-ghost">Découvrir le programme</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="card card-highlight">
+                    <h3>24 Avril 2026</h3>
+                    <p>Paris — Centre des Congrès</p>
+                    <a href="#programme" class="btn ghost">Voir le programme</a>
+                </div>
+            </div>
+        </div>
+        <div class="stats container">
+            <div class="stat"> <div class="stat-num">500+</div> <div class="stat-label">Participants</div> </div>
+            <div class="stat"> <div class="stat-num">20+</div> <div class="stat-label">Speakers</div> </div>
+            <div class="stat"> <div class="stat-num">15+</div> <div class="stat-label">Sessions</div> </div>
+            <div class="stat"> <div class="stat-num">8h</div> <div class="stat-label">De contenu</div> </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>À propos de l'événement</h2>
+            <p>Description de l'événement, objectifs, public visé, et pourquoi vous devriez participer.</p>
+        </div>
+    </section>
+
+    <!-- Programme -->
+    <section id="programme" class="programme">
+        <div class="container">
+            <h2>Programme</h2>
+            <div class="programme-grid">
+            <div class="programme-item">
+                <h3>Matin</h3>
+                <p>Détails des sessions du matin</p>
+            </div>
+            <div class="programme-item">
+                <h3>Après-midi</h3>
+                <p>Détails des sessions de l'après-midi</p>
+            </div>
+            <div class="programme-item">
+                <h3>Soir</h3>
+                <p>Détails des sessions du soir</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers -->
+    <section id="speakers" class="speakers">
+        <div class="container">
+            <h2>Intervenants</h2>
+            <div class="speakers-grid">
+            <div class="speaker">
+                <div class="speaker-photo">
+                    <a href=""></a>
+                </div>
+                <h3>Nom Intervenant</h3>
+                <p>Bio courte</p>
+            </div>
+            <div class="speaker">
+                <div class="speaker-photo">
+                    <a href=""></a>
+                </div>
+                <h3>Nom Intervenant</h3>
+                <p>Bio courte</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h2>Contact</h2>
+                <p>coordo@example.com — +33 1 23 45 67 89</p>
+            </div>
+            <div>
+                <form action="" class="contact-form">
+                    <input type="text" placeholder="Votre nom" required />
+                    <input type="email" placeholder="Votre email" required />
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2026 Événement</p>
+    </footer>
+
 </body>
 </html>
