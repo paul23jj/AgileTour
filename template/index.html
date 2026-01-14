@@ -3,19 +3,1456 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agile Tour</title>
-    <link rel="stylesheet" href="..static/styles.css">
+    <title>Agile Tour Sophia 2024</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="menu" id="menuButton">
-        <!-- Icône ≡ (menu hamburger) -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="3" y1="6" x2="21" y2="6"/>
-          <line x1="3" y1="12" x2="21" y2="12"/>
-          <line x1="3" y1="18" x2="21" y2="18"/>
-        </svg>
-      </div>
-    </nav>
+    <!-- Header -->
+    <header id="header">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <a href="#accueil" class="logo">Agile Tour Sophia</a>
+                
+                <!-- Navigation Desktop -->
+                <div class="nav-desktop">
+                    <a href="#programme" class="nav-link">Programme</a>
+                    <a href="#speakers" class="nav-link">Speakers</a>
+                    <a href="#equipe" class="nav-link">Équipe</a>
+                    <a href="#editions" class="nav-link">Éditions</a>
+                    <a href="#sponsors" class="nav-link">Sponsors</a>
+                    <button class="btn-primary">S'inscrire</button>
+                </div>
+
+                <!-- Bouton Menu Mobile -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Navigation Mobile -->
+            <div class="nav-mobile" id="navMobile">
+                <a href="#programme" class="nav-link-mobile">Programme</a>
+                <a href="#speakers" class="nav-link-mobile">Speakers</a>
+                <a href="#equipe" class="nav-link-mobile">Équipe</a>
+                <a href="#editions" class="nav-link-mobile">Éditions</a>
+                <a href="#sponsors" class="nav-link-mobile">Sponsors</a>
+                <button class="btn-primary-mobile">S'inscrire</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section Hero -->
+        <section id="accueil" class="hero">
+            <div class="hero-bg">
+                <div class="hero-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1761223976272-0d6d4bc38636?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwY29uZmVyZW5jZSUyMGF1ZGllbmNlfGVufDF8fHx8MTc2MTcxMDgyMHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Conference" class="hero-image">
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-inner">
+                    <!-- Badge -->
+                    <div class="hero-badge">
+                        <span class="badge-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            26 Septembre 2024
+                        </span>
+                        <span class="badge-separator"></span>
+                        <span class="badge-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            Sophia Antipolis
+                        </span>
+                    </div>
+
+                    <!-- Titre Principal -->
+                    <h1 class="hero-title">
+                        Agile Tour Sophia
+                        <span class="hero-year">2024</span>
+                    </h1>
+
+                    <!-- Sous-titre -->
+                    <p class="hero-subtitle">
+                        Où l'agilité rencontre l'innovation. Une journée pour redéfinir 
+                        la façon dont nous construisons le futur.
+                    </p>
+
+                    <!-- Boutons CTA -->
+                    <div class="hero-cta">
+                        <button class="btn-hero-primary">
+                            Réserver ma place
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                        <button class="btn-hero-secondary">Découvrir le programme</button>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Participants</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Speakers</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Sessions</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">8h</div>
+                            <div class="stat-label">De contenu</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Indicateur de scroll -->
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M19 12l-7 7-7-7"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <!-- Colonne Images -->
+                    <div class="about-images">
+                        <div class="image-column">
+                            <div class="about-image-wrapper tall">
+                                <img src="https://images.unsplash.com/photo-1571645163064-77faa9676a46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25mZXJlbmNlJTIwbmV0d29ya2luZyUyMGV2ZW50fGVufDF8fHx8MTc2MTYzNjkzNHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Event">
+                            </div>
+                            <div class="about-image-wrapper square">
+                                <img src="https://images.unsplash.com/photo-1705909773420-8d7af2a343f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3b3Jrc3BhY2UlMjBkZXNpZ258ZW58MXx8fHwxNzYxNzE0NjQ0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Workspace">
+                            </div>
+                        </div>
+                        <div class="image-column offset">
+                            <div class="about-image-wrapper square">
+                                <img src="https://images.unsplash.com/photo-1518107616985-bd48230d3b20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGFydHVwJTIwdGVhbSUyMG1lZXRpbmd8ZW58MXx8fHwxNzYxNzM0NTI1fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Team">
+                            </div>
+                            <div class="about-image-wrapper tall">
+                                <img src="https://images.unsplash.com/photo-1567943183748-3a7542120c90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGFyY2hpdGVjdHVyZXxlbnwxfHx8fDE3NjE2NzM0ODV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Architecture">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Colonne Contenu -->
+                    <div class="about-content">
+                        <div class="section-badge">À propos de l'événement</div>
+                        
+                        <h2 class="section-title">
+                            Transformez<br>
+                            votre vision
+                        </h2>
+                        
+                        <div class="about-text">
+                            <p>
+                                Agile Tour Sophia 2024 est bien plus qu'une simple conférence. C'est un catalyseur 
+                                de transformation, un lieu où les idées audacieuses prennent vie et où les 
+                                pratiques agiles rencontrent l'innovation de demain.
+                            </p>
+                            <p>
+                                Rejoignez 500+ professionnels passionnés, échangez avec 20+ experts reconnus 
+                                et participez à 15+ sessions enrichissantes qui façonneront l'avenir de votre 
+                                organisation.
+                            </p>
+                        </div>
+
+                        <div class="about-features">
+                            <div class="feature-card turquoise">
+                                <div class="feature-icon turquoise-bg">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="9" cy="7" r="4"/>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                    </svg>
+                                </div>
+                                <h4>Networking</h4>
+                                <p>Connectez-vous avec des pairs et des leaders</p>
+                            </div>
+                            <div class="feature-card orange">
+                                <div class="feature-icon orange-bg">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                                    </svg>
+                                </div>
+                                <h4>Apprentissage</h4>
+                                <p>Découvrez les dernières pratiques agiles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Programme -->
+        <section id="programme" class="program">
+            <div class="container">
+                <!-- Header -->
+                <div class="section-header">
+                    <div class="section-badge">Programme complet</div>
+                    <h2 class="section-title">
+                        Une journée<br>
+                        intense et inspirante
+                    </h2>
+                    <p class="section-description">
+                        Des keynotes captivantes, des workshops pratiques et des moments 
+                        d'échanges privilégiés pour enrichir votre pratique agile.
+                    </p>
+                </div>
+
+                <!-- Onglets -->
+                <div class="program-tabs">
+                    <button class="tab-button active" data-tab="matin">Matinée</button>
+                    <button class="tab-button" data-tab="apresMidi">Après-midi</button>
+                </div>
+
+                <!-- Contenu Matinée -->
+                <div class="tab-content active" id="tab-matin">
+                    <div class="schedule">
+                        <div class="session-card">
+                            <div class="session-time">
+                                <div class="time-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <span>08:30 - 09:00</span>
+                            </div>
+                            <div class="session-content">
+                                <div class="session-header">
+                                    <h3>Accueil & Café</h3>
+                                    <span class="session-type">Networking</span>
+                                </div>
+                                <div class="session-meta">
+                                    <span class="meta-item">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                        Hall principal
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="session-card">
+                            <div class="session-time">
+                                <div class="time-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <span>09:00 - 09:45</span>
+                            </div>
+                            <div class="session-content">
+                                <div class="session-header">
+                                    <h3>Keynote : L'Agilité à l'ère de l'IA</h3>
+                                    <span class="session-type">Keynote</span>
+                                </div>
+                                <div class="session-meta">
+                                    <span class="meta-item">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                            <circle cx="12" cy="7" r="4"/>
+                                        </svg>
+                                        Sophie Martin
+                                    </span>
+                                    <span class="meta-item">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                        Auditorium
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="session-card">
+                            <div class="session-time">
+                                <div class="time-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <span>10:00 - 11:00</span>
+                            </div>
+                            <div class="session-content">
+                                <div class="session-header">
+                                    <h3>Scrum à l'échelle : Retours d'expérience</h3>
+                                    <span class="session-type">Workshop</span>
+                                </div>
+                                <div class="session-meta">
+                                    <span class="meta-item">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                            <circle cx="12" cy="7" r="4"/>
+                                        </svg>
+                                        Jean Dupont
+                                    </span>
+                                    <span class="meta-item">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                        Salle A
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="session-card">
+                            <div class="session-time">
+                                <div class="time-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <span>11:15 - 12:15</span>
+                            </div>
+                            <div class="session-content">
+                                <div class="session-header">
+                                    <h3>Design Thinking & Agilité</h3>
+                                    <span class="session-type">Workshop</span>
+                                </div>
+                                <div class="session-meta">
+                                    <span class="meta-item">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                            <circle cx="12" cy="7" r="4"/>
+                                        </svg>
+                                        Marie Laurent
+                                    </span>
+                                    <span class="meta-item">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                        Salle B
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenu Après-midi -->
+                <div class="tab-content" id="tab-apresMidi">
+                    <div class="schedule">
+                        <div class="session-card">
+                            <div class="session-time">
+                                <div class="time-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <span>12:15 - 13:45</span>
+                            </div>
+                            <div class="session-content">
+                                <div class="session-header">
+                                    <h3>Déjeuner & Networking</h3>
+                                    <span class="session-type">Networking</span>
+                                </div>
+                                <div class="session-meta">
+                                    <span class="meta-item">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                        Terrasse
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="session-card">
+                            <div class="session-time">
+                                <div class="time-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <span>14:00 - 15:00</span>
+                            </div>
+                            <div class="session-content">
+                                <div class="session-header">
+                                    <h3>DevOps & Culture Agile</h3>
+                                    <span class="session-type">Workshop</span>
+                                </div>
+                                <div class="session-meta">
+                                    <span class="meta-item">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                            <circle cx="12" cy="7" r="4"/>
+                                        </svg>
+                                        Thomas Bernard
+                                    </span>
+                                    <span class="meta-item">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                        Salle A
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="session-card">
+                            <div class="session-time">
+                                <div class="time-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <span>15:15 - 16:15</span>
+                            </div>
+                            <div class="session-content">
+                                <div class="session-header">
+                                    <h3>Management Agile : Au-delà des frameworks</h3>
+                                    <span class="session-type">Workshop</span>
+                                </div>
+                                <div class="session-meta">
+                                    <span class="meta-item">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                            <circle cx="12" cy="7" r="4"/>
+                                        </svg>
+                                        Claire Dubois
+                                    </span>
+                                    <span class="meta-item">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                        Salle B
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="session-card">
+                            <div class="session-time">
+                                <div class="time-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <span>16:30 - 17:30</span>
+                            </div>
+                            <div class="session-content">
+                                <div class="session-header">
+                                    <h3>Table ronde : L'avenir de l'Agilité</h3>
+                                    <span class="session-type">Panel</span>
+                                </div>
+                                <div class="session-meta">
+                                    <span class="meta-item">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                        Auditorium
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="session-card">
+                            <div class="session-time">
+                                <div class="time-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <span>17:30 - 19:00</span>
+                            </div>
+                            <div class="session-content">
+                                <div class="session-header">
+                                    <h3>Cocktail de clôture</h3>
+                                    <span class="session-type">Networking</span>
+                                </div>
+                                <div class="session-meta">
+                                    <span class="meta-item">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                        Terrasse
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="program-cta">
+                    <button class="btn-gradient">Télécharger le programme complet</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Speakers -->
+        <section id="speakers" class="speakers">
+            <div class="decorative-blur blur-turquoise"></div>
+            <div class="decorative-blur blur-orange"></div>
+
+            <div class="container">
+                <!-- Header -->
+                <div class="section-header">
+                    <div class="section-badge">Nos experts</div>
+                    <h2 class="section-title">
+                        Apprenez des<br>
+                        meilleurs
+                    </h2>
+                    <p class="section-description">
+                        Des leaders reconnus qui partagent leur vision, leur expérience 
+                        et leurs insights sur l'agilité de demain.
+                    </p>
+                </div>
+
+                <!-- Speakers Grid -->
+                <div class="speakers-grid">
+                    <!-- Speaker 1 -->
+                    <div class="speaker-card">
+                        <div class="speaker-image-wrapper">
+                            <div class="speaker-overlay gradient-1"></div>
+                            <img src="https://images.unsplash.com/photo-1759922378092-14917cba3f59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHByb2Zlc3Npb25hbCUyMHNwZWFrZXJ8ZW58MXx8fHwxNzYxNzQyMjY3fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Sophie Martin" class="speaker-image">
+                            <div class="speaker-social">
+                                <button class="social-btn" aria-label="LinkedIn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                        <rect x="2" y="9" width="4" height="12"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </button>
+                                <button class="social-btn" aria-label="Twitter">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="speaker-bio">
+                                <p>15 ans d'expérience en transformation agile</p>
+                            </div>
+                        </div>
+                        <div class="speaker-info">
+                            <h3>Sophie Martin</h3>
+                            <p class="speaker-role">Agile Coach & Formatrice</p>
+                            <p class="speaker-company">Agile Partners</p>
+                        </div>
+                    </div>
+
+                    <!-- Speaker 2 -->
+                    <div class="speaker-card">
+                        <div class="speaker-image-wrapper">
+                            <div class="speaker-overlay gradient-2"></div>
+                            <img src="https://images.unsplash.com/photo-1635768229592-8c2532d33cb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwcHJvZmVzc2lvbmFsJTIwbWFufGVufDF8fHx8MTc2MTcyNTc4MXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Jean Dupont" class="speaker-image">
+                            <div class="speaker-social">
+                                <button class="social-btn" aria-label="LinkedIn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                        <rect x="2" y="9" width="4" height="12"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </button>
+                                <button class="social-btn" aria-label="Twitter">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="speaker-bio">
+                                <p>Expert en scaling agile et SAFe</p>
+                            </div>
+                        </div>
+                        <div class="speaker-info">
+                            <h3>Jean Dupont</h3>
+                            <p class="speaker-role">Scrum Master</p>
+                            <p class="speaker-company">Tech Solutions</p>
+                        </div>
+                    </div>
+
+                    <!-- Speaker 3 -->
+                    <div class="speaker-card">
+                        <div class="speaker-image-wrapper">
+                            <div class="speaker-overlay gradient-3"></div>
+                            <img src="https://images.unsplash.com/photo-1752118464988-2914fb27d0f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHNwZWFrZXIlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjE3NDIyNjd8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Marie Laurent" class="speaker-image">
+                            <div class="speaker-social">
+                                <button class="social-btn" aria-label="LinkedIn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                        <rect x="2" y="9" width="4" height="12"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </button>
+                                <button class="social-btn" aria-label="Twitter">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="speaker-bio">
+                                <p>Spécialiste UX et méthodologies créatives</p>
+                            </div>
+                        </div>
+                        <div class="speaker-info">
+                            <h3>Marie Laurent</h3>
+                            <p class="speaker-role">Design Thinking Lead</p>
+                            <p class="speaker-company">Innovation Lab</p>
+                        </div>
+                    </div>
+
+                    <!-- Speaker 4 -->
+                    <div class="speaker-card">
+                        <div class="speaker-image-wrapper">
+                            <div class="speaker-overlay gradient-2"></div>
+                            <img src="https://images.unsplash.com/photo-1518107616985-bd48230d3b20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGFydHVwJTIwdGVhbSUyMG1lZXRpbmd8ZW58MXx8fHwxNzYxNzM0NTI1fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Thomas Bernard" class="speaker-image">
+                            <div class="speaker-social">
+                                <button class="social-btn" aria-label="LinkedIn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                        <rect x="2" y="9" width="4" height="12"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </button>
+                                <button class="social-btn" aria-label="Twitter">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="speaker-bio">
+                                <p>Expert CI/CD et culture DevOps</p>
+                            </div>
+                        </div>
+                        <div class="speaker-info">
+                            <h3>Thomas Bernard</h3>
+                            <p class="speaker-role">DevOps Architect</p>
+                            <p class="speaker-company">Cloud Native Inc</p>
+                        </div>
+                    </div>
+
+                    <!-- Speaker 5 -->
+                    <div class="speaker-card">
+                        <div class="speaker-image-wrapper">
+                            <div class="speaker-overlay gradient-4"></div>
+                            <img src="https://images.unsplash.com/photo-1759922378092-14917cba3f59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHByb2Zlc3Npb25hbCUyMHNwZWFrZXJ8ZW58MXx8fHwxNzYxNzQyMjY3fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Claire Dubois" class="speaker-image">
+                            <div class="speaker-social">
+                                <button class="social-btn" aria-label="LinkedIn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                        <rect x="2" y="9" width="4" height="12"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </button>
+                                <button class="social-btn" aria-label="Twitter">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="speaker-bio">
+                                <p>Coach en transformation organisationnelle</p>
+                            </div>
+                        </div>
+                        <div class="speaker-info">
+                            <h3>Claire Dubois</h3>
+                            <p class="speaker-role">Agile Leader</p>
+                            <p class="speaker-company">Transform Inc</p>
+                        </div>
+                    </div>
+
+                    <!-- Speaker 6 -->
+                    <div class="speaker-card">
+                        <div class="speaker-image-wrapper">
+                            <div class="speaker-overlay gradient-3"></div>
+                            <img src="https://images.unsplash.com/photo-1635768229592-8c2532d33cb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwcHJvZmVzc2lvbmFsJTIwbWFufGVufDF8fHx8MTc2MTcyNTc4MXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Alexandre Roy" class="speaker-image">
+                            <div class="speaker-social">
+                                <button class="social-btn" aria-label="LinkedIn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                        <rect x="2" y="9" width="4" height="12"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </button>
+                                <button class="social-btn" aria-label="Twitter">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="speaker-bio">
+                                <p>Stratégie produit et innovation</p>
+                            </div>
+                        </div>
+                        <div class="speaker-info">
+                            <h3>Alexandre Roy</h3>
+                            <p class="speaker-role">Product Owner</p>
+                            <p class="speaker-company">Digital First</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom CTA -->
+                <div class="speakers-cta">
+                    <p class="cta-text">Et beaucoup d'autres experts à découvrir</p>
+                    <button class="btn-dark">Voir tous les speakers</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Équipe d'organisation -->
+        <section id="equipe" class="team">
+            <div class="decorative-blur blur-turquoise"></div>
+            <div class="decorative-blur blur-orange-bottom"></div>
+
+            <div class="container">
+                <!-- Header -->
+                <div class="section-header">
+                    <div class="section-badge">L'équipe qui fait vivre l'événement</div>
+                    <h2 class="section-title">
+                        Une équipe<br>
+                        passionnée
+                    </h2>
+                    <p class="section-description">
+                        Des bénévoles engagés qui mettent leur temps et leur énergie 
+                        au service de la communauté Agile de Sophia Antipolis.
+                    </p>
+                </div>
+
+                <!-- Team Grid - Version simplifiée avec 6 membres -->
+                <div class="speakers-grid">
+                    <div class="speaker-card">
+                        <div class="speaker-image-wrapper">
+                            <div class="speaker-overlay gradient-4"></div>
+                            <img src="https://images.unsplash.com/photo-1759922378092-14917cba3f59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHByb2Zlc3Npb25hbCUyMHNwZWFrZXJ8ZW58MXx8fHwxNzYxNzQyMjY3fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Isabelle Mercier" class="speaker-image">
+                            <div class="speaker-social">
+                                <button class="social-btn" aria-label="Email">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </button>
+                                <button class="social-btn" aria-label="LinkedIn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                        <rect x="2" y="9" width="4" height="12"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="speaker-info">
+                            <h3>Isabelle Mercier</h3>
+                            <p class="speaker-role">Responsable événement</p>
+                        </div>
+                    </div>
+
+                    <div class="speaker-card">
+                        <div class="speaker-image-wrapper">
+                            <div class="speaker-overlay gradient-2"></div>
+                            <img src="https://images.unsplash.com/photo-1635768229592-8c2532d33cb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwcHJvZmVzc2lvbmFsJTIwbWFufGVufDF8fHx8MTc2MTcyNTc4MXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Pierre Lefèvre" class="speaker-image">
+                            <div class="speaker-social">
+                                <button class="social-btn" aria-label="Email">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </button>
+                                <button class="social-btn" aria-label="LinkedIn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                        <rect x="2" y="9" width="4" height="12"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="speaker-info">
+                            <h3>Pierre Lefèvre</h3>
+                            <p class="speaker-role">Coordination programme</p>
+                        </div>
+                    </div>
+
+                    <div class="speaker-card">
+                        <div class="speaker-image-wrapper">
+                            <div class="speaker-overlay gradient-3"></div>
+                            <img src="https://images.unsplash.com/photo-1752118464988-2914fb27d0f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHNwZWFrZXIlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjE3NDIyNjd8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Camille Rousseau" class="speaker-image">
+                            <div class="speaker-social">
+                                <button class="social-btn" aria-label="Email">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </button>
+                                <button class="social-btn" aria-label="LinkedIn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                        <rect x="2" y="9" width="4" height="12"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="speaker-info">
+                            <h3>Camille Rousseau</h3>
+                            <p class="speaker-role">Communication & Marketing</p>
+                        </div>
+                    </div>
+
+                    <div class="speaker-card">
+                        <div class="speaker-image-wrapper">
+                            <div class="speaker-overlay gradient-2"></div>
+                            <img src="https://images.unsplash.com/photo-1635768229592-8c2532d33cb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwcHJvZmVzc2lvbmFsJTIwbWFufGVufDF8fHx8MTc2MTcyNTc4MXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Marc Fontaine" class="speaker-image">
+                            <div class="speaker-social">
+                                <button class="social-btn" aria-label="Email">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </button>
+                                <button class="social-btn" aria-label="LinkedIn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                        <rect x="2" y="9" width="4" height="12"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="speaker-info">
+                            <h3>Marc Fontaine</h3>
+                            <p class="speaker-role">Logistique & Accueil</p>
+                        </div>
+                    </div>
+
+                    <div class="speaker-card">
+                        <div class="speaker-image-wrapper">
+                            <div class="speaker-overlay gradient-3"></div>
+                            <img src="https://images.unsplash.com/photo-1759922378092-14917cba3f59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHByb2Zlc3Npb25hbCUyMHNwZWFrZXJ8ZW58MXx8fHwxNzYxNzQyMjY3fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Sophie Moreau" class="speaker-image">
+                            <div class="speaker-social">
+                                <button class="social-btn" aria-label="Email">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </button>
+                                <button class="social-btn" aria-label="LinkedIn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                        <rect x="2" y="9" width="4" height="12"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="speaker-info">
+                            <h3>Sophie Moreau</h3>
+                            <p class="speaker-role">Relations sponsors</p>
+                        </div>
+                    </div>
+
+                    <div class="speaker-card">
+                        <div class="speaker-image-wrapper">
+                            <div class="speaker-overlay gradient-5"></div>
+                            <img src="https://images.unsplash.com/photo-1635768229592-8c2532d33cb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwcHJvZmVzc2lvbmFsJTIwbWFufGVufDF8fHx8MTc2MTcyNTc4MXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Lucas Bernard" class="speaker-image">
+                            <div class="speaker-social">
+                                <button class="social-btn" aria-label="Email">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </button>
+                                <button class="social-btn" aria-label="LinkedIn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                        <rect x="2" y="9" width="4" height="12"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="speaker-info">
+                            <h3>Lucas Bernard</h3>
+                            <p class="speaker-role">Bénévoles & Support</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="team-cta">
+                    <h3>Rejoignez l'aventure !</h3>
+                    <p>
+                        Nous recherchons des bénévoles motivés pour nous aider à organiser 
+                        l'édition 2024. Une expérience enrichissante vous attend !
+                    </p>
+                    <button class="btn-gradient">Devenir bénévole</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Éditions Précédentes -->
+        <section id="editions" class="editions">
+            <div class="container">
+                <!-- Header -->
+                <div class="section-header">
+                    <div class="section-badge">Notre histoire</div>
+                    <h2 class="section-title">
+                        Les éditions<br>
+                        précédentes
+                    </h2>
+                    <p class="section-description">
+                        Découvrez l'évolution de notre événement au fil des années et 
+                        l'impact que nous avons créé ensemble dans l'écosystème Agile.
+                    </p>
+                </div>
+
+                <!-- Timeline -->
+                <div class="timeline">
+                    <!-- Édition 2023 -->
+                    <div class="timeline-item">
+                        <div class="timeline-image">
+                            <div class="timeline-overlay gradient-1"></div>
+                            <img src="https://images.unsplash.com/photo-1761223976272-0d6d4bc38636?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwY29uZmVyZW5jZSUyMGF1ZGllbmNlfGVufDF8fHx8MTc2MTcxMDgyMHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Agile Tour Sophia 2023">
+                            <div class="timeline-year">2023</div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <div class="timeline-date">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                                    </svg>
+                                    <span>28 Septembre 2023</span>
+                                </div>
+                                <div class="timeline-stats">
+                                    <div class="timeline-stat">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0189A3" stroke-width="2">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                            <circle cx="9" cy="7" r="4"/>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                        </svg>
+                                        <div>
+                                            <div class="stat-value">450+</div>
+                                            <div class="stat-label">Participants</div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-stat">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FD5400" stroke-width="2">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                            <circle cx="9" cy="7" r="4"/>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                        </svg>
+                                        <div>
+                                            <div class="stat-value">18</div>
+                                            <div class="stat-label">Speakers</div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-stat">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2">
+                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                        </svg>
+                                        <div>
+                                            <div class="stat-value">4.8/5</div>
+                                            <div class="stat-label">Satisfaction</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline-highlights">
+                                    <h4>Points forts</h4>
+                                    <ul>
+                                        <li>Keynote sur l'IA et l'Agilité</li>
+                                        <li>15 sessions enrichissantes</li>
+                                        <li>Networking exceptionnel</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Édition 2022 -->
+                    <div class="timeline-item reverse">
+                        <div class="timeline-image">
+                            <div class="timeline-overlay gradient-2"></div>
+                            <img src="https://images.unsplash.com/photo-1571645163064-77faa9676a46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25mZXJlbmNlJTIwbmV0d29ya2luZyUyMGV2ZW50fGVufDF8fHx8MTc2MTYzNjkzNHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Agile Tour Sophia 2022">
+                            <div class="timeline-year">2022</div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <div class="timeline-date">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                                    </svg>
+                                    <span>22 Septembre 2022</span>
+                                </div>
+                                <div class="timeline-stats">
+                                    <div class="timeline-stat">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0189A3" stroke-width="2">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                            <circle cx="9" cy="7" r="4"/>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                        </svg>
+                                        <div>
+                                            <div class="stat-value">380+</div>
+                                            <div class="stat-label">Participants</div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-stat">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FD5400" stroke-width="2">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                            <circle cx="9" cy="7" r="4"/>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                        </svg>
+                                        <div>
+                                            <div class="stat-value">15</div>
+                                            <div class="stat-label">Speakers</div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-stat">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2">
+                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                        </svg>
+                                        <div>
+                                            <div class="stat-value">4.7/5</div>
+                                            <div class="stat-label">Satisfaction</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline-highlights">
+                                    <h4>Points forts</h4>
+                                    <ul>
+                                        <li>Remote work & Agilité</li>
+                                        <li>12 workshops interactifs</li>
+                                        <li>Soirée de clôture mémorable</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Édition 2021 -->
+                    <div class="timeline-item">
+                        <div class="timeline-image">
+                            <div class="timeline-overlay gradient-3"></div>
+                            <img src="https://images.unsplash.com/photo-1583736902790-7e598ee0bb07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25mZXJlbmNlJTIwYXJjaGl2ZSUyMHZpbnRhZ2V8ZW58MXx8fHwxNzYxNzUxNDA4fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Agile Tour Sophia 2021">
+                            <div class="timeline-year">2021</div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <div class="timeline-date">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                                    </svg>
+                                    <span>30 Septembre 2021</span>
+                                </div>
+                                <div class="timeline-stats">
+                                    <div class="timeline-stat">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0189A3" stroke-width="2">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                            <circle cx="9" cy="7" r="4"/>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                        </svg>
+                                        <div>
+                                            <div class="stat-value">320+</div>
+                                            <div class="stat-label">Participants</div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-stat">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FD5400" stroke-width="2">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                            <circle cx="9" cy="7" r="4"/>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                        </svg>
+                                        <div>
+                                            <div class="stat-value">14</div>
+                                            <div class="stat-label">Speakers</div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-stat">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2">
+                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                        </svg>
+                                        <div>
+                                            <div class="stat-value">4.6/5</div>
+                                            <div class="stat-label">Satisfaction</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline-highlights">
+                                    <h4>Points forts</h4>
+                                    <ul>
+                                        <li>Format hybride innovant</li>
+                                        <li>10 sessions virtuelles</li>
+                                        <li>Communauté renforcée</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Édition 2020 -->
+                    <div class="timeline-item reverse">
+                        <div class="timeline-image">
+                            <div class="timeline-overlay gradient-5"></div>
+                            <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwbWVldGluZyUyMGNvbGxhYm9yYXRpb258ZW58MXx8fHwxNzYxNzA4OTU1fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Agile Tour Sophia 2020">
+                            <div class="timeline-year">2020</div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <div class="timeline-date">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                                    </svg>
+                                    <span>24 Septembre 2020</span>
+                                </div>
+                                <div class="timeline-stats">
+                                    <div class="timeline-stat">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0189A3" stroke-width="2">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                            <circle cx="9" cy="7" r="4"/>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                        </svg>
+                                        <div>
+                                            <div class="stat-value">280+</div>
+                                            <div class="stat-label">Participants</div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-stat">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FD5400" stroke-width="2">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                            <circle cx="9" cy="7" r="4"/>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                        </svg>
+                                        <div>
+                                            <div class="stat-value">12</div>
+                                            <div class="stat-label">Speakers</div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-stat">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2">
+                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                        </svg>
+                                        <div>
+                                            <div class="stat-value">4.5/5</div>
+                                            <div class="stat-label">Satisfaction</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline-highlights">
+                                    <h4>Points forts</h4>
+                                    <ul>
+                                        <li>Édition 100% en ligne</li>
+                                        <li>Adaptation COVID-19</li>
+                                        <li>Résilience de la communauté</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="editions-cta">
+                    <h3>Faites partie de l'histoire en 2024</h3>
+                    <p>
+                        Rejoignez-nous pour écrire un nouveau chapitre de l'Agile Tour Sophia 
+                        et contribuer à l'évolution de notre communauté.
+                    </p>
+                    <button class="btn-dark">Réserver ma place pour 2024</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Sponsors -->
+        <section id="sponsors" class="sponsors">
+            <div class="container">
+                <!-- Header -->
+                <div class="section-header">
+                    <div class="section-badge white">Ils nous font confiance</div>
+                    <h2 class="section-title white">
+                        Nos partenaires<br>
+                        d'exception
+                    </h2>
+                    <p class="section-description white">
+                        Ensemble, nous façonnons l'écosystème agile de demain et créons 
+                        une communauté d'excellence.
+                    </p>
+                </div>
+
+                <!-- Platinum Sponsors -->
+                <div class="sponsor-tier">
+                    <div class="tier-divider">
+                        <div class="divider-line"></div>
+                        <p class="tier-label">Platinum Partners</p>
+                        <div class="divider-line"></div>
+                    </div>
+                    <div class="sponsor-grid platinum">
+                        <div class="sponsor-card platinum-card">
+                            <div class="sponsor-card-glow"></div>
+                            <div class="sponsor-card-content">
+                                <div class="sponsor-logo">T</div>
+                                <div class="sponsor-details">
+                                    <h4>TechCorp</h4>
+                                    <p>Innovation Partner</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sponsor-card platinum-card">
+                            <div class="sponsor-card-glow"></div>
+                            <div class="sponsor-card-content">
+                                <div class="sponsor-logo">C</div>
+                                <div class="sponsor-details">
+                                    <h4>CloudNative</h4>
+                                    <p>Platform Sponsor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gold Sponsors -->
+                <div class="sponsor-tier">
+                    <div class="tier-divider">
+                        <div class="divider-line"></div>
+                        <p class="tier-label">Gold Partners</p>
+                        <div class="divider-line"></div>
+                    </div>
+                    <div class="sponsor-grid gold">
+                        <div class="sponsor-card gold-card">
+                            <div class="sponsor-logo gold">D</div>
+                            <h4>DevTools Pro</h4>
+                            <p>Workshop Sponsor</p>
+                        </div>
+                        <div class="sponsor-card gold-card">
+                            <div class="sponsor-logo gold">A</div>
+                            <h4>AgileHub</h4>
+                            <p>Community Partner</p>
+                        </div>
+                        <div class="sponsor-card gold-card">
+                            <div class="sponsor-logo gold">I</div>
+                            <h4>InnovateLab</h4>
+                            <p>Coffee Break Sponsor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Silver Sponsors -->
+                <div class="sponsor-tier">
+                    <div class="tier-divider">
+                        <div class="divider-line"></div>
+                        <p class="tier-label">Silver Partners</p>
+                        <div class="divider-line"></div>
+                    </div>
+                    <div class="sponsor-grid silver">
+                        <div class="sponsor-card silver-card">
+                            <div class="sponsor-logo silver">S</div>
+                            <h4>StartupX</h4>
+                            <p>Media Partner</p>
+                        </div>
+                        <div class="sponsor-card silver-card">
+                            <div class="sponsor-logo silver">C</div>
+                            <h4>CodeCraft</h4>
+                            <p>Event Partner</p>
+                        </div>
+                        <div class="sponsor-card silver-card">
+                            <div class="sponsor-logo silver">T</div>
+                            <h4>TechValley</h4>
+                            <p>Local Partner</p>
+                        </div>
+                        <div class="sponsor-card silver-card">
+                            <div class="sponsor-logo silver">S</div>
+                            <h4>SophiaInc</h4>
+                            <p>Venue Partner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="sponsors-cta-box">
+                    <h3>Devenez partenaire</h3>
+                    <p>
+                        Associez votre marque à Agile Tour Sophia et bénéficiez d'une visibilité 
+                        exceptionnelle auprès de 500+ professionnels de l'agilité.
+                    </p>
+                    <button class="btn-white">Découvrir les opportunités</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Newsletter Section -->
+        <div class="newsletter">
+            <div class="container">
+                <div class="newsletter-grid">
+                    <div class="newsletter-content">
+                        <h3>Restez informé</h3>
+                        <p>
+                            Recevez les dernières actualités et ne manquez aucune information 
+                            importante sur Agile Tour Sophia 2024.
+                        </p>
+                    </div>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Votre adresse email" class="email-input">
+                        <button class="btn-subscribe">
+                            S'inscrire
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Footer -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- About -->
+                    <div class="footer-about">
+                        <h3>Agile Tour Sophia</h3>
+                        <p>
+                            La conférence de référence sur les méthodologies agiles en région PACA. 
+                            Rejoignez-nous le 26 septembre 2024 à Sophia Antipolis.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Twitter">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Instagram">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Email">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="footer-links">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#accueil">Accueil</a></li>
+                            <li><a href="#programme">Programme</a></li>
+                            <li><a href="#speakers">Speakers</a></li>
+                            <li><a href="#equipe">Équipe</a></li>
+                            <li><a href="#editions">Éditions</a></li>
+                            <li><a href="#sponsors">Partenaires</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Resources -->
+                    <div class="footer-links">
+                        <h4>Ressources</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Devenir sponsor</a></li>
+                            <li><a href="#">Presse</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="footer-links">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:contact@agiletoursophia.fr">contact@agiletoursophia.fr</a></li>
+                            <li>
+                                Sophia Antipolis<br>
+                                06560 Valbonne<br>
+                                France
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bottom Bar -->
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Agile Tour Sophia. Tous droits réservés.</p>
+                    <div class="footer-legal">
+                        <a href="#">Mentions légales</a>
+                        <a href="#">Politique de confidentialité</a>
+                        <a href="#">CGV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
