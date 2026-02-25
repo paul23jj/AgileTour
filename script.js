@@ -1,6 +1,6 @@
 // ====================================
 // MENU MOBILE
-// ====================================
+// ==================================
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('menuToggle');
     const navMobile = document.getElementById('navMobile');
