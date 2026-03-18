@@ -1,6 +1,4 @@
-// ====================================
-// MENU MOBILE
-// ==================================
+// navbar pour mobile
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('menuToggle');
     const navMobile = document.getElementById('navMobile');
@@ -31,9 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ====================================
     // NAVIGATION STICKY
-    // ====================================
     const header = document.getElementById('header');
     let lastScroll = 0;
 
@@ -50,9 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         lastScroll = currentScroll;
     });
 
-    // ====================================
     // ONGLETS DU PROGRAMME
-    // ====================================
     const tabButtons = document.querySelectorAll('.tab-button');
     const tabContents = document.querySelectorAll('.tab-content');
 
@@ -74,9 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ====================================
     // SMOOTH SCROLL POUR LES ANCRES
-    // ====================================
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
     anchorLinks.forEach(function(link) {
@@ -107,9 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ====================================
     // ANIMATIONS AU SCROLL (FADE IN)
-    // ====================================
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -134,9 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(element);
     });
 
-    // ====================================
     // COMPTEUR ANIMÉ POUR LES STATS DU HERO
-    // ====================================
     function animateCounter(element, start, end, duration) {
         let startTimestamp = null;
         const step = function(timestamp) {
@@ -174,9 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
         statsObserver.observe(heroStats);
     }
 
-    // ====================================
     // PARALLAX LÉGER POUR LES IMAGES
-    // ====================================
     const parallaxImages = document.querySelectorAll('.hero-image, .timeline-image img');
 
     window.addEventListener('scroll', function() {
@@ -189,9 +175,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ====================================
     // GESTION DU FORMULAIRE NEWSLETTER
-    // ====================================
     const newsletterForm = document.querySelector('.newsletter-form');
     const emailInput = document.querySelector('.email-input');
     const subscribeBtn = document.querySelector('.btn-subscribe');
@@ -227,9 +211,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // ====================================
     // EFFET HOVER SUR LES CARTES
-    // ====================================
     const cards = document.querySelectorAll('.session-card, .speaker-card, .sponsor-card');
 
     cards.forEach(function(card) {
@@ -242,9 +224,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ====================================
     // CHRONOMÈTRE COMPTE À REBOURS (optionnel)
-    // ====================================
     function updateCountdown() {
         const eventDate = new Date('2024-09-26T09:00:00').getTime();
         const now = new Date().getTime();
@@ -264,9 +244,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mettre à jour le compte à rebours toutes les secondes
     setInterval(updateCountdown, 1000);
 
-    // ====================================
     // DÉTECTION DE LA HAUTEUR POUR LE HERO
-    // ====================================
     function setHeroHeight() {
         const hero = document.querySelector('.hero');
         if (hero) {
@@ -277,9 +255,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setHeroHeight();
     window.addEventListener('resize', setHeroHeight);
 
-    // ====================================
     // ANIMATION DES GRADIENTS (OPTIONNEL)
-    // ====================================
     const decorativeBlurs = document.querySelectorAll('.decorative-blur');
 
     decorativeBlurs.forEach(function(blur) {
@@ -306,9 +282,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ====================================
     // LAZY LOADING DES IMAGES
-    // ====================================
     const images = document.querySelectorAll('img[src]');
 
     const imageObserver = new IntersectionObserver(function(entries) {
@@ -335,9 +309,7 @@ document.addEventListener('DOMContentLoaded', function() {
         imageObserver.observe(img);
     });
 
-    // ====================================
     // EFFET DE TYPING (optionnel pour le titre)
-    // ====================================
     function typeWriter(element, text, speed) {
         let i = 0;
         element.textContent = '';
@@ -353,17 +325,17 @@ document.addEventListener('DOMContentLoaded', function() {
         type();
     }
 
-    // Vous pouvez décommenter ceci pour activer l'effet typing sur le titre
-    // const heroTitle = document.querySelector('.hero-title');
-    // if (heroTitle) {
-    //     const originalText = heroTitle.textContent;
-    //     typeWriter(heroTitle, originalText, 100);
-    // }
+    const heroTitle = document.querySelector('.hero-title');
+    if (heroTitle) {
+        const originalText = heroTitle.textContent;
+        typeWriter(heroTitle, originalText, 100);
+    }
 
     // ====================================
     // LOG DE DÉMARRAGE
     // ====================================
-    console.log('🚀 Agile Tour Sophia 2024 - Site chargé avec succès !');
-    console.log('📅 Événement : 26 Septembre 2024');
-    console.log('📍 Lieu : Sophia Antipolis');
+    console.log('Agile Tour Sophia 2026 - Site chargé avec succès !');
+    console.log('Événement : \"date à définir\"');
+    console.log('Lieu : Sophia Antipolis');
 });
+
