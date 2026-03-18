@@ -19,6 +19,10 @@ document.addEventListener('DOMContentLoaded', function() {
             iconClose.style.display = 'none';
         }
     });
+    // bouton 'découvrir le programme (haut du site)
+    document.getElementById('btnProgramme').addEventListener('click', function () {
+        document.getElementById('programme').scrollIntoView({ behavior : 'smooth' });
+    });
 
     // Fermer le menu quand on clique sur un lien
     navLinksMobile.forEach(function(link) {
