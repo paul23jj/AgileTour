@@ -266,9 +266,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 50);
     });
 
-    // ====================================
     // GESTION DES BOUTONS CTA
-    // ====================================
     const ctaButtons = document.querySelectorAll('.btn-hero-primary, .btn-gradient, .btn-dark, .btn-white');
 
     ctaButtons.forEach(function(button) {
@@ -331,9 +329,7 @@ document.addEventListener('DOMContentLoaded', function() {
         typeWriter(heroTitle, originalText, 100);
     }
 
-    // ====================================
     // LOG DE DÉMARRAGE
-    // ====================================
     console.log('Agile Tour Sophia 2026 - Site chargé avec succès !');
     console.log('Événement : \"date à définir\"');
     console.log('Lieu : Sophia Antipolis');
